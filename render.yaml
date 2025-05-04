@@ -1,10 +1,8 @@
 services:
   - type: web
-    name: localai
+    name: afritrade-localai
     plan: free
     dockerfile: Dockerfile
     env:
       - key: THREADS
-        value: "1"
-      - key: MODELS_PATH
-        value: "/models"
+        value: "1"  # Free tier only allows 1 CPU core
