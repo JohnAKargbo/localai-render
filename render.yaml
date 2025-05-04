@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: localai
+    plan: free
+    dockerfile: Dockerfile
+    env:
+      - key: THREADS
+        value: "1"
+      - key: MODELS_PATH
+        value: "/models"
